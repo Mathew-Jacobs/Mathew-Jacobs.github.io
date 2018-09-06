@@ -1,0 +1,41 @@
+
+/****************************
+Body Section
+****************************/
+body{
+    background: $color-black;
+    font-family: 'Archivo',sans-serif;
+    color: $color-text;
+}
+#page-wrapper {
+    padding: 0 1em;
+    margin: 0.6em auto;
+    border-radius: 1em;
+}
+
+
+#page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: auto
+}
+
+#page-wrapper {
+    background: $color-appBar;
+    flex-grow: 1
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@media only screen and (min-width:64.063em) {
+    #page-container {
+        max-width: 990px
+    }
+    #page-wrapper {
+        width: 100%
+    }
+}

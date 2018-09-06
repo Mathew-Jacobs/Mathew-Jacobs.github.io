@@ -1,0 +1,81 @@
+/* ------------------------------
+Navbar Section
+--------------------------------*/
+
+.clearfix:after,
+.clearfix:before {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+#main-nav {
+    padding: 1em 0 .5em 0;
+    border-bottom: 3px solid $color-primary;
+    border-radius: 7px;
+}
+
+#links {
+    padding: 0;
+    margin: 0;
+}
+#mathewHome {
+    text-align: center;
+    font-size: 3.5em;
+    color: $color-text;
+    margin-bottom: 0;
+    display: block;
+    border-bottom: 0;
+    text-decoration: none
+}
+.press {
+    text-decoration: none !important;
+}
+#main-nav NAV A {
+    border-bottom: 0
+}
+
+#second-nav UL {
+    text-transform: uppercase;
+    font-size: 100%;
+    text-align: center
+}
+
+#second-nav LI {
+    display: inline;
+    padding: 0 .25em
+}
+#second-nav LI a{
+    color: $color-text;
+    opacity: $secondaryText;
+}
+
+#second-nav .active {
+    font-weight: 700;
+    border-bottom: 0
+}
+
+@media only screen and (min-width:40.063em) {
+    #main-nav {
+        margin-bottom: 0;
+    }
+    #mathewHome {
+        float: left;
+        text-align: left;
+        margin-left:0.8em;
+        margin-bottom: 0;
+    }
+    #second-nav {
+        float:right;
+    }
+    #second-nav UL {
+        padding-top: 2.5em;
+    }
+    #second-nav LI {
+        display: inline;
+        padding: 0 0 0 1em;
+    }
+}

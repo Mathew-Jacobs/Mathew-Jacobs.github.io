@@ -1,0 +1,247 @@
+/* Variables used throughout will go here. */
+/* Color Palette */
+/****************************
+Body Section
+****************************/
+body {
+  background: #000000;
+  font-family: 'Archivo',sans-serif;
+  color: #FFFFFF; }
+
+#page-wrapper {
+  padding: 0 1em;
+  margin: 0.6em auto;
+  border-radius: 1em; }
+
+#page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: auto; }
+
+#page-wrapper {
+  background: #212121;
+  flex-grow: 1; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@media only screen and (min-width: 64.063em) {
+  #page-container {
+    max-width: 990px; }
+  #page-wrapper {
+    width: 100%; } }
+
+/* ------------------------------
+Navbar Section
+--------------------------------*/
+.clearfix:after,
+.clearfix:before {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+#main-nav {
+  padding: 1em 0 .5em 0;
+  border-bottom: 3px solid #3E50B4;
+  border-radius: 7px; }
+
+#links {
+  padding: 0;
+  margin: 0; }
+
+#mathewHome {
+  text-align: center;
+  font-size: 3.5em;
+  color: #FFFFFF;
+  margin-bottom: 0;
+  display: block;
+  border-bottom: 0;
+  text-decoration: none; }
+
+.press {
+  text-decoration: none !important; }
+
+#main-nav NAV A {
+  border-bottom: 0; }
+
+#second-nav UL {
+  text-transform: uppercase;
+  font-size: 100%;
+  text-align: center; }
+
+#second-nav LI {
+  display: inline;
+  padding: 0 .25em; }
+
+#second-nav LI a {
+  color: #FFFFFF;
+  opacity: 0.7; }
+
+#second-nav .active {
+  font-weight: 700;
+  border-bottom: 0; }
+
+@media only screen and (min-width: 40.063em) {
+  #main-nav {
+    margin-bottom: 0; }
+  #mathewHome {
+    float: left;
+    text-align: left;
+    margin-left: 0.8em;
+    margin-bottom: 0; }
+  #second-nav {
+    float: right; }
+  #second-nav UL {
+    padding-top: 2.5em; }
+  #second-nav LI {
+    display: inline;
+    padding: 0 0 0 1em; } }
+
+/* CSS code for the Header section. */
+.main {
+  background: #303030;
+  color: #FFFFFF;
+  padding: 0.25em 1em 1em;
+  margin: 2em 0; }
+
+#grid {
+  position: relative;
+  width: 95%;
+  margin: 2.5% auto;
+  padding: 0;
+  margin-bottom: 10%; }
+
+#grid li {
+  list-style-type: none;
+  position: relative;
+  float: left;
+  width: 27.85714285714286%;
+  padding: 0 0 32.16760145166612%;
+  transform: rotate(-60deg) skewY(30deg);
+  background: #fd005f;
+  overflow: hidden;
+  visibility: hidden; }
+
+#grid li * {
+  visibility: visible; }
+
+#grid li .hexagon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #424242;
+  transform: skewY(-30deg) rotate(60deg);
+  overflow: hidden; }
+
+#grid li:nth-child(3n+2) {
+  margin: 0 1%; }
+
+#grid li:nth-child(6n+4) {
+  margin-left: 0.5%; }
+
+#grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+  margin-top: -6.9285714285%;
+  margin-bottom: -6.9285714285%;
+  transform: translateX(50%) rotate(-60deg) skewY(30deg); }
+
+.icon {
+  position: absolute;
+  width: 50%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear 0s; }
+
+#illustrator {
+  width: 60%; }
+
+#grid li:hover .icon {
+  width: 60%; }
+
+#grid li:hover #illustrator {
+  width: 70%; }
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  padding: 20% 5%;
+  width: 100%;
+  overflow-y: auto;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #424242; }
+
+#grid li:hover .overlay {
+  opacity: 1; }
+
+.infoText {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.chart-container {
+  position: relative;
+  margin: auto;
+  height: 30vw;
+  width: 95%;
+  min-height: 200px;
+  max-height: 310px; }
+
+/* ------------------------------
+Portfolio Section
+--------------------------------*/
+#portfolio {
+  background: #303030;
+  margin-bottom: 2em; }
+
+.iconBig {
+  position: absolute;
+  width: 120%;
+  top: 52%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear 0s; }
+
+.iconBigger {
+  position: absolute;
+  width: 220%;
+  top: 52%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  transition: all 0.6s linear 0s; }
+
+#grid li:hover .iconBig {
+  width: 150%; }
+
+#grid li:hover .iconBigger {
+  width: 250%; }
+
+/****************************
+About Section
+****************************/
+#about {
+  background: #303030;
+  margin-bottom: 2em; }
+
+/* CSS code for the Contact section. */
+#contact {
+  background: #303030;
+  margin-bottom: 2em; }
+
+/* CSS code for the Footer section. */
+#footer {
+  background: #000000;
+  text-align: center; }

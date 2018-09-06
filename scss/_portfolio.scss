@@ -1,0 +1,33 @@
+/* ------------------------------
+Portfolio Section
+--------------------------------*/
+#portfolio {
+    background: $color-background;
+    margin-bottom: 2em;
+}
+
+.iconBig {
+        position: absolute;
+        width: 120%;
+        top:52%;
+        left:50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.6s linear 0s;
+}
+
+.iconBigger {
+    position: absolute;
+    width: 220%;
+    top:52%;
+    left:90%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s linear 0s;
+}
+
+#grid li:hover .iconBig {
+    width:150%;
+}
+
+#grid li:hover .iconBigger {
+    width:250%;
+}

@@ -1,0 +1,110 @@
+/* CSS code for the Header section. */
+.main {
+    background: $color-background;
+    color: $color-text;
+    padding: 0.25em 1em 1em;
+    margin: 2em 0;
+}
+
+#grid {
+    position: relative;
+    width: 95%;
+    margin: 2.5% auto;
+    padding: 0;
+    margin-bottom: 10%;
+}
+
+#grid li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+    width: 27.85714285714286%;
+    padding: 0 0 32.16760145166612%;
+    transform: rotate(-60deg) skewY(30deg);
+    background: #fd005f;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#grid li * {
+    visibility: visible;
+}
+
+#grid li .hexagon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #424242;
+    transform: skewY(-30deg) rotate(60deg);
+    overflow: hidden;
+}
+
+#grid li:nth-child(3n+2) {
+    margin: 0 1%;
+}
+
+#grid li:nth-child(6n+4) {
+    margin-left: 0.5%; 
+}
+
+#grid li:nth-child(6n+4), #grid li:nth-child(6n+5), #grid li:nth-child(6n+6) {
+    margin-top: -6.9285714285%;
+    margin-bottom: -6.9285714285%;
+    transform: translateX(50%) rotate(-60deg) skewY(30deg);
+}
+.icon {
+    position: absolute;
+    width: 50%;
+    top:52%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s linear 0s;
+}
+#illustrator {
+    width: 60%;
+}
+#grid li:hover .icon {
+    width:60%;
+}
+#grid li:hover #illustrator {
+    width:70%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    padding: 20% 5%;
+    width: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #424242;
+}
+
+#grid li:hover .overlay {
+    opacity: 1;
+}
+
+.infoText {
+    position: absolute;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.chart-container {
+    position: relative;
+    margin: auto;
+    height: 30vw;
+    width: 95%;
+    min-height: 200px;
+    max-height: 310px;
+  }
