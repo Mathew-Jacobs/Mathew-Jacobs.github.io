@@ -16,9 +16,6 @@ fetch("https://api.github.com/users/Mathew-Jacobs/repos")
             userStuff.languagesLinkArr.push(repo.languages_url)
         })
         getLangObj(userStuff.languagesLinkArr)
-            .then(() => {
-                console.log(userStuff.languages)
-            })
 
     })
 
