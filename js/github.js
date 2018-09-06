@@ -9,7 +9,7 @@ userStuff.languagesLinkArr = []
 userStuff.languages = {}
 userStuff.languageTotal = 0
 
-fetch("http://api.github.com/users/Mathew-Jacobs/repos")
+fetch("https://api.github.com/users/Mathew-Jacobs/repos")
     .then(res => res.json())
     .then(data => {
         data.map(repo => {
