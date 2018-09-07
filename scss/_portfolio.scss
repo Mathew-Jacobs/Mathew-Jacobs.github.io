@@ -26,8 +26,10 @@ Portfolio Section
 
 #grid li:hover .iconBig {
     width:150%;
+    opacity: 0;
 }
 
 #grid li:hover .iconBigger {
     width:250%;
+    opacity: 0;
 }
