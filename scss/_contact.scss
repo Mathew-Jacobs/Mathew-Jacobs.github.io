@@ -3,3 +3,28 @@
     background: $color-background;
     margin-bottom: 2em;
 }
+
+.emailForm {
+    background-color: $color-cards;
+    padding: 2em 0;
+}
+
+#contact button {
+    display: block;
+    margin: 0 auto;
+    width: 14%;
+    color: black;
+}
+
+.emailIN {
+    display: block;
+    margin: 0 auto;
+    width: 40%;
+}
+
+.messageIN {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+    height: 100px;
+}

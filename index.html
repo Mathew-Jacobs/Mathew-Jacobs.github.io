@@ -61,17 +61,15 @@
       <!--==========================
   About Section
   ============================-->
-      <section id="about">
+      <!-- <section id="about">
         <div class="main">
           <h1>About</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur rerum saepe, id laboriosam similique nihil
-            neque quia quae aspernatur perferendis corporis eum eaque rem quam nam fugit commodi quidem illum. Lorem ipsum
-            dolor sit amet consectetur adipisicing elit. Nemo sed eos ipsum amet, deserunt suscipit optio accusamus omnis
-            enim tempora, animi autem? Placeat ut magni corrupti, molestiae vel sint natus. Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Enim fuga, unde consequuntur aut animi eos, eaque quis doloremque sapiente debitis nisi corporis
-            exercitationem? Voluptatibus corporis quisquam perspiciatis at eaque similique?</p>
+          <ul>
+            <li>Full Stack Developer</li>
+            <li>Dungeon Explorer</li>
+          </ul>
         </div>
-      </section>
+      </section> -->
 
       <!--==========================
   Header Section
@@ -82,7 +80,7 @@
           <ul id="grid" class="clearfix">
             <li>
               <div class="hexagon">
-                  <img class="icon" src="./assets/img/CSSIcon.svg">
+                <img class="icon" src="./assets/img/CSSIcon.svg">
                 <div class="overlay">
                   <div class="infoText">No template was used for my portfolio, any and all styling was written by me using CSS</div>
                 </div>
@@ -108,7 +106,8 @@
               <div class="hexagon">
                 <img class="icon" id="illustrator" src="./assets/img/JsIcon.svg">
                 <div class="overlay">
-                  <div class="infoText">The links to the sections of this page, many of my programs, and the chart below was written by me using javascript + chart.js</div>
+                  <div class="infoText">The links to the sections of this page, many of my programs, and the chart below was written by me using
+                    javascript + chart.js</div>
                 </div>
               </div>
             </li>
@@ -195,7 +194,8 @@
               <div class="hexagon">
                 <img class="icon" src="./assets/img/MoreSoon.svg">
                 <div class="overlay">
-                  <div class="infoText">I am always working on a new project to add to my portfolio, check back once in a while to see how I improve and innovate</div>
+                  <div class="infoText">I am always working on a new project to add to my portfolio, check back once in a while to see how I improve
+                    and innovate</div>
                 </div>
               </div>
             </li>
@@ -220,43 +220,48 @@
                 <i class="glyphicon glyphicon-envelope"></i>
                 <a href="mailto:mathew.jacobs.exe@gmail.com"> mathew.jacobs.exe@gmail.com</a>
               </p>
+              <img src="./assets/img/0.jpg" style="border-radius: 50%;">
             </div>
             <div class="col-sm-7">
-              Email section coming later today, I am very tired
+              <form class="emailForm" method="POST" action="https://formspree.io/mathew.jacobs.exe@gmail.com">
+                <input class="emailIN" type="email" name="email" placeholder="Your email">
+                <textarea class="messageIN" name="message" placeholder="Your message"></textarea>
+                <button type="submit">Send</button>
+              </form>
             </div>
           </div>
         </div>
       </section>
 
-      </div>
     </div>
-    <!--==========================
+  </div>
+  <!--==========================
   Footer Section
   ============================-->
 
-    <footer id="footer">
-      <div class="container">
-        <div class="main" style="background: black;">
-          <a class="press" id="topbutton" href="#top">BackToTop</a>
-        </div>
+  <footer id="footer">
+    <div class="container">
+      <div class="main" style="background: black;">
+        <a class="press" id="topbutton" href="#top">BackToTop</a>
       </div>
-    </footer>
+    </div>
+  </footer>
 
-    <!--==========================
+  <!--==========================
   Scripts Section
   ============================-->
 
-    <!-- Bootstrap & jQuery Scripts - Note: jQuery must be first -->
-    <script src="./tools/jquery/jquery.min.js"></script>
-    <script src="./tools/bootstrap/js/bootstrap.min.js"></script>
+  <!-- Bootstrap & jQuery Scripts - Note: jQuery must be first -->
+  <script src="./tools/jquery/jquery.min.js"></script>
+  <script src="./tools/bootstrap/js/bootstrap.min.js"></script>
 
-    <!-- jQuery 3rd Party Scripts-->
-    <script src="./tools/wowjs/wow.min.js"></script>
-    <script src="./tools/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <!-- jQuery 3rd Party Scripts-->
+  <script src="./tools/wowjs/wow.min.js"></script>
+  <script src="./tools/magnific-popup/jquery.magnific-popup.min.js"></script>
 
-    <!-- Custom scripts for this template -->
-    <script src="js/main.min.js"></script>
-    <script src="js/github.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/main.min.js"></script>
+  <script src="js/github.js"></script>
 </body>
 
 </html>

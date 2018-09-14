@@ -190,7 +190,9 @@ Navbar Section
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center; }
+  text-align: center;
+  color: white;
+  text-decoration: none; }
 
 .chart-container {
   position: relative;
@@ -242,6 +244,27 @@ About Section
 #contact {
   background: #303030;
   margin-bottom: 2em; }
+
+.emailForm {
+  background-color: #424242;
+  padding: 2em 0; }
+
+#contact button {
+  display: block;
+  margin: 0 auto;
+  width: 14%;
+  color: black; }
+
+.emailIN {
+  display: block;
+  margin: 0 auto;
+  width: 40%; }
+
+.messageIN {
+  display: block;
+  margin: 10px auto;
+  width: 70%;
+  height: 100px; }
 
 /* CSS code for the Footer section. */
 #footer {
