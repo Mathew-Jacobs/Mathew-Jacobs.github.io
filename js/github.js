@@ -1,37 +1,51 @@
 var ctx = document.getElementById("myChart").getContext("2d");
 
-
-
-
 const userStuff = {}
 
 userStuff.languagesLinkArr = []
 userStuff.languages = {}
 userStuff.languageTotal = 0
 
-fetch("https://api.github.com/users/Mathew-Jacobs/repos")
+fetch("https://api.github.com/users/Mathew-Jacobs/repos", {
+    method: 'GET',
+    headers: new Headers({
+        'Authorization' : " Bearer 20ce74c3bfb3723acf28caefc98bde3b96172a21",
+        'Content-type' : 'application-json'
+    })
+})
+
+    
     .then(res => res.json())
     .then(data => {
         data.map(repo => {
             userStuff.languagesLinkArr.push(repo.languages_url)
         })
         getLangObj(userStuff.languagesLinkArr)
-
+        
     })
 
+    
 const getLangObj = (langArr) => {
+    var iteration = 0;
     langArr.map((langUrl, i, arr) => {
+        var repoCount = arr.length - 1;
         fetch(langUrl)
             .then(res => res.json())
             .then(data => {
+                
                 initProps(data)
                 addToLanguageArray(data)
 
                 userStuff.languageTotal = languageTotal(userStuff.languages)
-                
-                if (arr.length - 1 === i) {
+
+                console.log(iteration)
+                console.log(Object.keys(userStuff.languages))
+                console.log(Object.values(userStuff.languages))
+                console.log('\n')
+                if (iteration === repoCount) {
                     chart(Object.keys(userStuff.languages), Object.values(userStuff.languages))
                 }
+                iteration++;
             })
     })
 
@@ -47,8 +61,6 @@ const addToLanguageArray = (obj) => {
     Object.keys(obj).map((lang) => {
         userStuff.languages[lang] = obj[lang] + userStuff.languages[lang]
     })
-
-    console.log(userStuff)
 }
 
 const languageTotal = (obj) => {
