@@ -7,11 +7,7 @@ userStuff.languages = {}
 userStuff.languageTotal = 0
 
 fetch("https://api.github.com/users/Mathew-Jacobs/repos", {
-    method: 'GET',
-    headers: new Headers({
-        'Authorization' : " Bearer 20ce74c3bfb3723acf28caefc98bde3b96172a21",
-        'Content-type' : 'application-json'
-    })
+    method: 'GET'
 })
 
     
