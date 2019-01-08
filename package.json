@@ -28,6 +28,7 @@
     "gulp-watch": "^5.0.0"
   },
   "dependencies": {
+    "@nicky-lenaers/ngx-scroll-to": "^1.1.1",
     "animate.css": "^3.5.2",
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
